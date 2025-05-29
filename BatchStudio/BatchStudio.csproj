@@ -59,7 +59,7 @@
     <Compile Include="Infrastructures\SingletonBase.cs" />
     <Compile Include="Models\ScriptCommand.cs" />
     <Compile Include="ViewModels\BatchStudioViewModel.cs" />
-    <Page Include="MainWindow.xaml">
+    <Page Include="BatchStudioMainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -68,8 +68,8 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Infrastructures\ViewModelBase.cs" />
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="BatchStudioMainWindow.xaml.cs">
+      <DependentUpon>BatchStudioMainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
