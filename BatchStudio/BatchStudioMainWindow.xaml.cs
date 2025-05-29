@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using BatchStudio.ViewModels;
+using System.Windows;
 
 namespace BatchStudio
 {
@@ -7,9 +8,12 @@ namespace BatchStudio
     /// </summary>
     public partial class BatchStudioMainWindow : Window
     {
+        private BatchStudioViewModel m_BatchStudioVM = BatchStudioViewModel.Instance;
+
         public BatchStudioMainWindow()
         {
             InitializeComponent();
+            DataContext = m_BatchStudioVM;
         }
     }
 }
