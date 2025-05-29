@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Infrastructures\RelayCommand.cs" />
     <Compile Include="Infrastructures\SingletonBase.cs" />
     <Compile Include="Models\ScriptCommand.cs" />
     <Compile Include="ViewModels\BatchStudioViewModel.cs" />
