@@ -58,6 +58,8 @@
     <Compile Include="Infrastructures\RelayCommand.cs" />
     <Compile Include="Infrastructures\SingletonBase.cs" />
     <Compile Include="Models\ScriptCommand.cs" />
+    <Compile Include="Services\FileExportService.cs" />
+    <Compile Include="Services\ScriptBuilderService.cs" />
     <Compile Include="ViewModels\BatchStudioViewModel.cs" />
     <Page Include="BatchStudioMainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
