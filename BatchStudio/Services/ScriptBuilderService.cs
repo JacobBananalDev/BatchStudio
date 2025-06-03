@@ -1,12 +1,21 @@
-﻿namespace BatchStudio.Services
+﻿using BatchStudio.Models;
+using System.Collections.ObjectModel;
+
+namespace BatchStudio.Services
 {
     internal static class ScriptBuilderService
     {
-        internal static string GetScriptBuilderPath()
+        internal static string BuildScriptText(ObservableCollection<ScriptCommand> commands)
         {
-            // This method should return the path to the script builder executable.
-            // For now, we return a placeholder path.
-            return @"C:\Path\To\Your\ScriptBuilder.exe";
+            var sb = new System.Text.StringBuilder();
+            sb.AppendLine("@echo off");
+
+            foreach (var cmd in commands)
+            {
+                sb.AppendLine(cmd.CommandText);
+            }
+
+            return sb.ToString();
         }
     }
 }
